@@ -1,0 +1,34 @@
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Service.deps.json
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Service.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Service.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Data.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Repository.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Repository.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Data.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.csproj.AssemblyReference.cache
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.GeneratedMSBuildEditorConfig.editorconfig
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.AssemblyInfoInputs.cache
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.AssemblyInfo.cs
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.csproj.CoreCompileInputs.cache
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Se.AEB3E340.Up2Date
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\refint\Store.Service.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Service\obj\Debug\net8.0\ref\Store.Service.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Service.deps.json
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Service.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Service.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Data.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Repository.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Repository.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\bin\Debug\net8.0\Store.Data.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.csproj.AssemblyReference.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.AssemblyInfoInputs.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.AssemblyInfo.cs
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.csproj.CoreCompileInputs.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Se.AEB3E340.Up2Date
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\refint\Store.Service.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\ref\Store.Service.dll

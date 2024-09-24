@@ -1,0 +1,30 @@
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Repository.deps.json
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Repository.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Repository.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Data.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Data.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.csproj.AssemblyReference.cache
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.GeneratedMSBuildEditorConfig.editorconfig
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.AssemblyInfoInputs.cache
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.AssemblyInfo.cs
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.csproj.CoreCompileInputs.cache
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Re.0C98E3FA.Up2Date
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\refint\Store.Repository.dll
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.pdb
+I:\Wesam\WesamProjects\APIs\ECommerceAPI\Store.Repository\obj\Debug\net8.0\ref\Store.Repository.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Repository.deps.json
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Repository.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Repository.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Data.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\bin\Debug\net8.0\Store.Data.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.csproj.AssemblyReference.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.AssemblyInfoInputs.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.AssemblyInfo.cs
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.csproj.CoreCompileInputs.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Re.0C98E3FA.Up2Date
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\refint\Store.Repository.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\ref\Store.Repository.dll
