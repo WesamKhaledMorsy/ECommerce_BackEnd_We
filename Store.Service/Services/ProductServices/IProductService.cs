@@ -1,4 +1,6 @@
-﻿using Store.Service.Services.ProductServices.DTOs;
+﻿using Store.Repository.Specification.ProductSpecifications;
+using Store.Service.Helper;
+using Store.Service.Services.ProductServices.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +12,11 @@ namespace Store.Service.Services.ProductServices
     public interface IProductService
     {
         Task<ProductDetailsDto> GetProductByIdAsync(int? productId);
-        Task<IEnumerable<ProductDetailsDto>> GetAllProductsAsync();
-        Task<IEnumerable<BrandTypeDetailsDto>> GetAllBrandsAsync();
-        Task<IEnumerable<BrandTypeDetailsDto>> GetAllTypesAsync();
+        //Task<IReadOnlyList<ProductDetailsDto>> GetAllProductsAsync();
+        //Task<IReadOnlyList<ProductDetailsDto>> GetAllProductsAsync(ProductSpecification specs);        
+        Task<PaginatedResultDto<ProductDetailsDto>> GetAllProductsAsync(ProductSpecification specs);//To Apply pagination
+
+        Task<IReadOnlyList<BrandTypeDetailsDto>> GetAllBrandsAsync();
+        Task<IReadOnlyList<BrandTypeDetailsDto>> GetAllTypesAsync();
     }
 }

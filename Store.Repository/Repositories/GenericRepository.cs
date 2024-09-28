@@ -2,6 +2,7 @@
 using Store.Data.Contexts;
 using Store.Data.Entities;
 using Store.Repository.Interfaces;
+using Store.Repository.Specification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,10 +24,10 @@ namespace Store.Repository.Repositories
         public void DeleteAsync(TEntity entity)
             =>  _context.Set<TEntity>().Remove(entity);
 
-        public async Task<IEnumerable<TEntity>> GetAllAsNoTrackingAsync()
+        public async Task<IReadOnlyList<TEntity>> GetAllAsNoTrackingAsync()
             => await _context.Set<TEntity>().AsNoTracking().ToListAsync();
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public async Task<IReadOnlyList<TEntity>> GetAllAsync()
         => await _context.Set<TEntity>().ToListAsync();
 
        // public async Task<TEntity> GetByIdAsNoTrackingAsync(TKey? id)
@@ -34,8 +35,22 @@ namespace Store.Repository.Repositories
 
         public async Task<TEntity> GetByIdAsync(TKey? id)
             =>await  _context.Set<TEntity>().FindAsync(id);
-
+       
         public  void UpdateAsync(TEntity entity)
         =>  _context.Set<TEntity>().Update(entity);
+
+
+        public async Task<IReadOnlyList<TEntity>> GetWithSpecificationsAllAsync(ISpecification<TEntity>? spec)
+            => await ApplySpecfications(spec).ToListAsync();
+
+        public async Task<TEntity> GetWithSpecificationsByIdAsync(ISpecification<TEntity>? spec)
+       => await ApplySpecfications(spec).FirstOrDefaultAsync();
+
+
+        private IQueryable<TEntity> ApplySpecfications(ISpecification<TEntity> specs)
+           => SpecificationEvaluator<TEntity, TKey>.GetQuery(_context.Set<TEntity>(), specs);
+
+        public async Task<int> GetCountWithSpecificationAsync(ISpecification<TEntity>? spec)
+            => await ApplySpecfications(spec).CountAsync();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Store.Data.Entities;
+using Store.Repository.Specification.ProductSpecifications;
 using Store.Service.Services.ProductServices;
 using Store.Service.Services.ProductServices.DTOs;
 
@@ -25,10 +26,10 @@ namespace Store.Web.Controllers
         public async Task<ActionResult<IEnumerable<BrandTypeDetailsDto>>> GetAllTypes()
            => Ok(await _productService.GetAllTypesAsync());
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDetailsDto>>> GetAllProducts()
-          => Ok(await _productService.GetAllProductsAsync());
+        public async Task<ActionResult<IEnumerable<ProductDetailsDto>>> GetAllProducts([FromQuery]ProductSpecification input)
+          => Ok(await _productService.GetAllProductsAsync(input));
         [HttpGet]
         public async Task<ActionResult<ProductDetailsDto>> GetProductById(int? id)
-    => Ok(await _productService.GetProductByIdAsync(id));
+             => Ok(await _productService.GetProductByIdAsync(id));
     }
 }

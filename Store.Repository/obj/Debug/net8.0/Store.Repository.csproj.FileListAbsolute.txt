@@ -28,3 +28,4 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\refint\Store.Repository.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.pdb
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\ref\Store.Repository.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Repository\obj\Debug\net8.0\Store.Repository.sourcelink.json
