@@ -48,12 +48,11 @@ namespace Store.Repository.Specification.ProductSpecifications
                 }
             }
         }
+
         public ProductWithSpecifications(int? id):base(product => product.Id == id) 
         {
             AddInclude(x => x.Brand);
             AddInclude(x => x.Type);                       
         }
-
-
     }
 }

@@ -4,6 +4,7 @@ using Store.Data.Contexts;
 using Store.Repository;
 using Store.Repository.Interfaces;
 using Store.Repository.Repositories;
+using Store.Service.Services.ProductBrandServices;
 using Store.Service.Services.ProductServices;
 using Store.Service.Services.ProductServices.DTOs;
 using Store.Web.Helper;
@@ -27,7 +28,8 @@ namespace Store.Web
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IProductService, ProductService>();      
+            builder.Services.AddScoped<IProductService, ProductService>();    
+            builder.Services.AddScoped<IProductBrandService, ProductBrandService>();
             builder.Services.AddAutoMapper(typeof(ProductProfile));
             var app = builder.Build();
             // ApplySeeding Method From Helper Folder
