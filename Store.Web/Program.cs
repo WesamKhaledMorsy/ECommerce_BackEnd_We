@@ -1,13 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
 using Store.Data.Contexts;
-using Store.Repository;
-using Store.Repository.Interfaces;
-using Store.Repository.Repositories;
-using Store.Service.Services.ProductBrandServices;
-using Store.Service.Services.ProductServices;
-using Store.Service.Services.ProductServices.DTOs;
+using Store.Web.Extentions;
 using Store.Web.Helper;
+using Store.Web.Middlewares;
 
 namespace Store.Web
 {
@@ -24,13 +20,9 @@ namespace Store.Web
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IProductService, ProductService>();    
-            builder.Services.AddScoped<IProductBrandService, ProductBrandService>();
-            builder.Services.AddAutoMapper(typeof(ProductProfile));
+            // Add the Refactoring method of registering the services
+            builder.Services.AddApplicationServices();
+
             var app = builder.Build();
             // ApplySeeding Method From Helper Folder
             await ApplySeeding.ApplySeedingAsync(app);
@@ -41,6 +33,8 @@ namespace Store.Web
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            // Add My Custom Middleware before any middleware of routing auth 
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
             // To display any(files, images , videos .. ) this in wwwroot
