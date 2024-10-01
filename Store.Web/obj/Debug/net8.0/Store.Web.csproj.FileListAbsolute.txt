@@ -287,3 +287,5 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Stor
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\ref\Store.Web.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\AutoMapper.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.sourcelink.json
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\StackExchange.Redis.dll

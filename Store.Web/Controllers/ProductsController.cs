@@ -4,6 +4,7 @@ using Store.Data.Entities;
 using Store.Repository.Specification.ProductSpecifications;
 using Store.Service.Services.ProductServices;
 using Store.Service.Services.ProductServices.DTOs;
+using Store.Web.Helper;
 
 namespace Store.Web.Controllers
 {
@@ -26,6 +27,7 @@ namespace Store.Web.Controllers
         public async Task<ActionResult<IEnumerable<BrandTypeDetailsDto>>> GetAllTypes()
            => Ok(await _productService.GetAllTypesAsync());
         [HttpGet]
+        [Cache(30)]
         public async Task<ActionResult<IEnumerable<ProductDetailsDto>>> GetAllProducts([FromQuery]ProductSpecification input)
           => Ok(await _productService.GetAllProductsAsync(input));
         [HttpGet]

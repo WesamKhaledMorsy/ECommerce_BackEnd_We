@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 using Store.Data.Contexts;
 using Store.Web.Extentions;
 using Store.Web.Helper;
@@ -20,6 +21,13 @@ namespace Store.Web
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            // configure caching Redis
+            builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
+            {
+                var redisConnection = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"));
+                return ConnectionMultiplexer.Connect(redisConnection);
+            });
+
             // Add the Refactoring method of registering the services
             builder.Services.AddApplicationServices();
 

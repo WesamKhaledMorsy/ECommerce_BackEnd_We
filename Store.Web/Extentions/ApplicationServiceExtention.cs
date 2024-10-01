@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Store.Repository.Interfaces;
 using Store.Repository.Repositories;
+using Store.Service.CacheServices;
 using Store.Service.HandleResponses;
 using Store.Service.Services.ProductBrandServices;
 using Store.Service.Services.ProductServices;
@@ -18,6 +19,7 @@ namespace Store.Web.Extentions
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductBrandService, ProductBrandService>();
+            services.AddScoped<ICacheService, CacheService>();
             services.AddAutoMapper(typeof(ProductProfile));
             // add the configurations of ValidationErrorResponse class that we made it to help in our custom Middleware
             services.Configure<ApiBehaviorOptions>(options =>
