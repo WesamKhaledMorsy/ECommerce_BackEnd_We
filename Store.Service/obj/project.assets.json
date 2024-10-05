@@ -1066,6 +1066,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "StackExchange.Redis": "2.8.16",
           "Store.Data": "1.0.0"
         },
         "compile": {

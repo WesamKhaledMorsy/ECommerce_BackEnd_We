@@ -18,9 +18,7 @@ namespace Store.Web
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<StoreDbContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             // configure caching Redis
             builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
             {

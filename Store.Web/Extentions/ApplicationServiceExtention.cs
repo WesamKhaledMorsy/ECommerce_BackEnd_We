@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Store.Data.Contexts;
+using Store.Repository.Basket;
 using Store.Repository.Interfaces;
 using Store.Repository.Repositories;
-using Store.Service.CacheServices;
 using Store.Service.HandleResponses;
+using Store.Service.Services.BasketServices;
+using Store.Service.Services.CacheServices;
 using Store.Service.Services.ProductBrandServices;
 using Store.Service.Services.ProductServices;
 using Store.Service.Services.ProductServices.DTOs;
@@ -20,7 +24,10 @@ namespace Store.Web.Extentions
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductBrandService, ProductBrandService>();
             services.AddScoped<ICacheService, CacheService>();
+            services.AddScoped<IBasketRepository, BasketRepository>();    
+            services.AddScoped<IBasketService, BasketService>();
             services.AddAutoMapper(typeof(ProductProfile));
+            services.AddAutoMapper(typeof(BasketProfile));
             // add the configurations of ValidationErrorResponse class that we made it to help in our custom Middleware
             services.Configure<ApiBehaviorOptions>(options =>
             {

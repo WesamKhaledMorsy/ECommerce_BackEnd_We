@@ -150,6 +150,7 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Stor
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Store.Web.runtimeconfig.json
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Store.Web.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Store.Web.pdb
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\AutoMapper.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Azure.Core.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Azure.Identity.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Humanizer.dll
@@ -177,6 +178,8 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Micr
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\StackExchange.Redis.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -271,6 +274,7 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Stor
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.csproj.CoreCompileInputs.cache
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.sourcelink.json
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\staticwebassets.build.json
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\staticwebassets.development.json
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\staticwebassets\msbuild.Store.Web.Microsoft.AspNetCore.StaticWebAssets.props
@@ -285,7 +289,3 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\refi
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.pdb
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.genruntimeconfig.cache
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\ref\Store.Web.dll
-D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\AutoMapper.dll
-D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\obj\Debug\net8.0\Store.Web.sourcelink.json
-D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
-D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Web\bin\Debug\net8.0\StackExchange.Redis.dll

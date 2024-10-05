@@ -35,6 +35,14 @@ namespace Store.Repository
                     if (products is not null)
                         await context.Products.AddRangeAsync(products);
                 }
+                if (context.DeliverMethods != null && !context.DeliverMethods.Any())
+                {
+                    //Presist Data to Database
+                    var deliverMethodsData = File.ReadAllText("../Store.Repository/SeedData/delivery.json");
+                    var deliverMethods = JsonSerializer.Deserialize<List<DeliverMethod>>(deliverMethodsData);
+                    if (deliverMethods is not null)
+                        await context.DeliverMethods.AddRangeAsync(deliverMethods);
+                }
                 await context.SaveChangesAsync();
             }
 			catch (Exception ex)

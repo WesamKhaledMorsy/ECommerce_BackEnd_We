@@ -27,9 +27,9 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.AssemblyInfoInputs.cache
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.AssemblyInfo.cs
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.csproj.CoreCompileInputs.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.sourcelink.json
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Se.AEB3E340.Up2Date
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\refint\Store.Service.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.pdb
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\ref\Store.Service.dll
-D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Service\obj\Debug\net8.0\Store.Service.sourcelink.json

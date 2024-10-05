@@ -9,9 +9,7 @@ using Store.Service.Services.ProductServices.DTOs;
 
 namespace Store.Web.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    [ApiController]
-    public class ProductBrandController : ControllerBase
+    public class ProductBrandController : BaseController
     {
         private readonly IProductBrandService _productBrandService;
         public ProductBrandController(IProductBrandService productBrandService)

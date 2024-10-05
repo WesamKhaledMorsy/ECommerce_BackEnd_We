@@ -18,6 +18,7 @@ D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\Store.Data.AssemblyInfoInputs.cache
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\Store.Data.AssemblyInfo.cs
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\Store.Data.csproj.CoreCompileInputs.cache
+D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\Store.Data.sourcelink.json
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\Store.Data.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\refint\Store.Data.dll
 D:\Route _Diploma\Back_end\.NET\API\ECommerceAPI\Store.Data\Store.Data\obj\Debug\net8.0\Store.Data.pdb
