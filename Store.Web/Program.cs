@@ -17,8 +17,10 @@ namespace Store.Web
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<StoreIdentiityDbContext>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection")));
             builder.Services.AddDbContext<StoreDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));         
             // configure caching Redis
             builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
             {
@@ -28,6 +30,8 @@ namespace Store.Web
 
             // Add the Refactoring method of registering the services
             builder.Services.AddApplicationServices();
+
+            builder.Services.AddIdentityServices();
 
             var app = builder.Build();
             // ApplySeeding Method From Helper Folder
@@ -45,6 +49,9 @@ namespace Store.Web
             app.UseHttpsRedirection();
             // To display any(files, images , videos .. ) this in wwwroot
             app.UseStaticFiles();
+            
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.MapControllers();
