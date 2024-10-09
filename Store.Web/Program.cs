@@ -31,7 +31,13 @@ namespace Store.Web
             // Add the Refactoring method of registering the services
             builder.Services.AddApplicationServices();
 
-            builder.Services.AddIdentityServices();
+            // Documenttaion of Swagger
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerDocumentation();
+
+            builder.Services.AddIdentityServices(builder.Configuration);
+
+            
 
             var app = builder.Build();
             // ApplySeeding Method From Helper Folder

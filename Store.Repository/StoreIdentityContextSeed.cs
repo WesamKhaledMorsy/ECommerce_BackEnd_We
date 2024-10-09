@@ -24,7 +24,7 @@ namespace Store.Repository
                         PostalCode="123466",
                     }
                 };
-                await userManager.CreateAsync(user,"password123!");
+                await userManager.CreateAsync(user,"Password123!");
             }
         }
     }

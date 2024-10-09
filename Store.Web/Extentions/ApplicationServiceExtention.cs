@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Fast.Extensions.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Store.Data.Contexts;
 using Store.Repository.Basket;
@@ -10,6 +11,8 @@ using Store.Service.Services.CacheServices;
 using Store.Service.Services.ProductBrandServices;
 using Store.Service.Services.ProductServices;
 using Store.Service.Services.ProductServices.DTOs;
+using Store.Service.Services.TokenServices;
+using Store.Service.Services.UserServices;
 
 namespace Store.Web.Extentions
 {
@@ -24,8 +27,10 @@ namespace Store.Web.Extentions
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductBrandService, ProductBrandService>();
             services.AddScoped<ICacheService, CacheService>();
-            services.AddScoped<IBasketRepository, BasketRepository>();    
             services.AddScoped<IBasketService, BasketService>();
+            services.AddScoped<Service.Services.TokenServices.ITokenService, TokenService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IBasketRepository, BasketRepository>();    
             services.AddAutoMapper(typeof(ProductProfile));
             services.AddAutoMapper(typeof(BasketProfile));
             // add the configurations of ValidationErrorResponse class that we made it to help in our custom Middleware
