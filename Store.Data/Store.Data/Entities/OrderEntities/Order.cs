@@ -22,5 +22,7 @@ namespace Store.Data.Entities.OrderEntities
         public decimal GetTotal()
             => SubTotal+DeliverMethod.Price;
 
+        public string? PaymentIntentId { get; set; }
+
     }
 }

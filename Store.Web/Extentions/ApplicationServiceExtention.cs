@@ -8,6 +8,8 @@ using Store.Repository.Repositories;
 using Store.Service.HandleResponses;
 using Store.Service.Services.BasketServices;
 using Store.Service.Services.CacheServices;
+using Store.Service.Services.OrderServices;
+using Store.Service.Services.OrderServices.DTOs;
 using Store.Service.Services.ProductBrandServices;
 using Store.Service.Services.ProductServices;
 using Store.Service.Services.ProductServices.DTOs;
@@ -30,9 +32,12 @@ namespace Store.Web.Extentions
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<Service.Services.TokenServices.ITokenService, TokenService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IOrderService,OrderService>();
             services.AddScoped<IBasketRepository, BasketRepository>();    
             services.AddAutoMapper(typeof(ProductProfile));
             services.AddAutoMapper(typeof(BasketProfile));
+            services.AddAutoMapper(typeof(OrderProfile));
+
             // add the configurations of ValidationErrorResponse class that we made it to help in our custom Middleware
             services.Configure<ApiBehaviorOptions>(options =>
             {

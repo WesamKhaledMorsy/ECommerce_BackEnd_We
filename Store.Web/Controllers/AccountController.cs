@@ -38,7 +38,7 @@ namespace Store.Web.Controllers
             return Ok(user);
         }
 
-        [HttpGet]s
+        [HttpGet]
         [Authorize]
         public async Task<UserDto> GetCurrentUserDetails()
         {

@@ -10,7 +10,7 @@ namespace Store.Data.Entities.OrderEntities
     {
         public decimal Price { get; set; }
         public int Quatity { get; set; }
-        public ProductItem ProductItem { get; set; }
+        public ProductItem ItemOrdered { get; set; }
         public Guid OrderId { get; set; }
     }
 }
