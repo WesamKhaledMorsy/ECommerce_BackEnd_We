@@ -2,14 +2,18 @@
 using Store.Data.Entities;
 using Store.Data.Entities.OrderEntities;
 using Store.Repository.Interfaces;
+using Store.Repository.Repositories;
 using Store.Repository.Specification.OrderSpecifications;
 using Store.Service.Services.BasketServices;
 using Store.Service.Services.OrderServices.DTOs;
+using Store.Service.Services.PaymentServices;
+using Stripe;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Product = Store.Data.Entities.Product;
 
 namespace Store.Service.Services.OrderServices
 {
@@ -18,11 +22,15 @@ namespace Store.Service.Services.OrderServices
         private readonly IBasketService _basketService;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        public OrderService(IBasketService basketService, IUnitOfWork unitOfWork, IMapper mapper)
+        private readonly IPaymentService _paymentService;
+
+        public OrderService(IBasketService basketService, IUnitOfWork unitOfWork,
+            IMapper mapper, IPaymentService paymentService)
         {
             _basketService = basketService;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _paymentService = paymentService;
         }
         public async Task<OrderDetailsDto> CreateOrderAsync(OrderDto input)
         {
@@ -33,11 +41,11 @@ namespace Store.Service.Services.OrderServices
 
             #region Fill Order Item List with Items in the basket
             var orderItems = new List<OrderItemDto>();
-            foreach (var basketItem in orderItems)
+            foreach (var basketItem in basket.BasketItems)
             {
-                var productItem = await _unitOfWork.Repository<Product, int>().GetByIdAsync(basketItem.ProductItemId);
+                var productItem = await _unitOfWork.Repository<Product, int>().GetByIdAsync(basketItem.ProductId);
                 if(productItem is null)
-                    throw new Exception($"Product with Id: {basketItem.ProductItemId} Not Exist");
+                    throw new Exception($"Product with Id: {basketItem.ProductId} Not Exist");
 
                 var itemOrdered = new ProductItem
                 {
@@ -48,7 +56,7 @@ namespace Store.Service.Services.OrderServices
                 var orderItem = new OrderItem
                 {
                     Price= productItem.Price,
-                    Quatity = basketItem.Quatity,
+                    Quatity = basketItem.Quantity,
                     ItemOrdered = itemOrdered
                 };
 
@@ -68,7 +76,11 @@ namespace Store.Service.Services.OrderServices
             #endregion
 
             #region TO Do => Payment
-
+            var specs = new OrderWithPaymentIntentSpecification(basket.PaymentIntentId);
+            var existingOrder = await _unitOfWork.Repository<Order, Guid>().GetWithSpecificationsByIdAsync(specs);
+            if(existingOrder is null)            
+                await _paymentService.CreateOrUpdatePaymentIntent(basket);
+            
             #endregion
 
             #region Create Order
@@ -83,6 +95,7 @@ namespace Store.Service.Services.OrderServices
                 BasketId= input.BasketId,
                 OrderItems=mappedOrderItems,
                 SubTotal=subTotal,
+                PaymentIntentId=basket.PaymentIntentId,
             };
 
             await _unitOfWork.Repository<Order, Guid>().AddAsync(order);

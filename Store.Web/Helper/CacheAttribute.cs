@@ -9,7 +9,7 @@ namespace Store.Web.Helper
     {
         private readonly int _timeTOLiveInSeconds;
 
-        public CacheAttribute(int timeTOLiveInSeconds)
+         public CacheAttribute(int timeTOLiveInSeconds)
         {
             _timeTOLiveInSeconds=timeTOLiveInSeconds;
         }

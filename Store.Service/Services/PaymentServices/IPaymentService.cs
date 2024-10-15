@@ -10,9 +10,9 @@ namespace Store.Service.Services.PaymentServices
 {
     public interface IPaymentService
     {
-        Task<CustomerBasketDto> CreateOrUpdatePaymentIntent(CustomerBasketDto input);
-        Task<OrderDetailsDto> UpdateOrderPaymentSucceeded(string paymentIntentId);
-        Task<OrderDetailsDto> UpdateOrderPaymentFailed(string paymentIntentId);
+        Task<CustomerBasketDto> CreateOrUpdatePaymentIntent(CustomerBasketDto input); // This is only the end Point
+        Task<OrderDetailsDto> UpdateOrderPaymentSucceeded(string paymentIntentId); // This is an action
+        Task<OrderDetailsDto> UpdateOrderPaymentFailed(string paymentIntentId); // This is an action
 
     }
 }

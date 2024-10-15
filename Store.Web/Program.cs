@@ -35,6 +35,18 @@ namespace Store.Web
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerDocumentation();
 
+            //TO support frontend
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .WithOrigins("https://localhost:4200", 
+                                        "http://localhost:5168", 
+                                        "http://localhost:21696");
+                });
+            });
             builder.Services.AddIdentityServices(builder.Configuration);
 
             
@@ -55,6 +67,7 @@ namespace Store.Web
             app.UseHttpsRedirection();
             // To display any(files, images , videos .. ) this in wwwroot
             app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
             
             app.UseAuthentication();
 
